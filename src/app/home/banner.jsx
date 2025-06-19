@@ -9,7 +9,7 @@ const Banner = ({ data }) => {
         <section className={styles.bannerSection} style={{ backgroundImage: `url(${data.BannerPoster})` }}>
             <Container className="h-100">
                 <Row className="h-100">
-                    <Col sm={8} md={7} lg={7} xl={7} >
+                    <Col sm={8} md={7} lg={7} xl={6} >
                         <div className={styles.bannerTxt}>
                             <h1>{data.title}</h1>
                             <p>{data.desc}</p>
