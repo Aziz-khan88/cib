@@ -3,33 +3,41 @@ import { useState, useEffect } from "react";
 import styles from "@/styles/layout/header.module.scss";
 import Link from "next/link";
 import { Col, Container, Row } from "react-bootstrap";
-import MainLogo from "media/layout/mainLogo.webp"
+import MainLogo from "media/layout/mainLogo.webp";
 import Image from "next/image";
 import { ClosedIcon, NavIcon } from "../app-constants";
-
 
 const Header = () => {
     const [scrolled, setScrolled] = useState(false);
     const [isActive, setIsActive] = useState(false);
+
     useEffect(() => {
         const handleScroll = () => {
-            const isScrolled = window.scrollY > 10;
-            setScrolled(isScrolled);
+            setScrolled(window.scrollY > 10);
         };
         window.addEventListener("scroll", handleScroll);
-        return () => {
-            window.removeEventListener("scroll", handleScroll);
+        return () => window.removeEventListener("scroll", handleScroll);
+    }, []);
+
+    useEffect(() => {
+        const handleResize = () => {
+            if (window.innerWidth >= 575) {
+                setIsActive(false);
+                document.body.classList.remove("active");
+            }
         };
+        window.addEventListener("resize", handleResize);
+        return () => window.removeEventListener("resize", handleResize);
     }, []);
 
     const handleClick = () => {
-        setIsActive(!isActive);
-        if (!isActive) {
-            document.body.classList.add("active");
-        } else {
-            document.body.classList.remove("active");
+        if (window.innerWidth < 575) {
+            const newState = !isActive;
+            setIsActive(newState);
+            document.body.classList.toggle("active", newState);
         }
     };
+
     return (
         <section className={`${styles.headerSection} ${scrolled ? styles.active : ""}`}>
             <Container className="h-100">
@@ -46,10 +54,7 @@ const Header = () => {
                         >
                             {isActive ? <ClosedIcon /> : <NavIcon />}
                         </div>
-                        <ul
-                            className={`${styles.mainNavigation}  ${isActive ? `${styles.active}` : ""
-                                }`}
-                        >
+                        <ul className={`${styles.mainNavigation} ${isActive ? styles.active : ""}`}>
                             <li><Link href="/" onClick={handleClick}>Home</Link></li>
                             <li><Link href="/products" onClick={handleClick}>Products</Link></li>
                             <li><Link href="/quotes" onClick={handleClick}>Quotes</Link></li>
@@ -61,7 +66,7 @@ const Header = () => {
                 </Row>
             </Container>
         </section>
-    )
-}
+    );
+};
 
-export default Header
+export default Header;
