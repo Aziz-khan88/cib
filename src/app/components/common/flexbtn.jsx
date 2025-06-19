@@ -4,7 +4,7 @@ const FlexBtn = ({ LiveChat, txt }) => {
     return (
         <div className={styles.flexbtnSection}>
             <div className={styles.btnCommon}>
-                {txt ? txt : "Get Started"}
+                {txt ? txt : "Request a Quote"}
             </div>
             <div className={styles.btnCommon}>
                 Call Now

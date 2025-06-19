@@ -12,7 +12,7 @@ const Broker = ({ data }) => {
                         <div className="divContent">
                             {data.desc}
                         </div>
-                        <FlexBtn txt="Get Started" LiveChat={true} />
+                        <FlexBtn txt="Request a Quote" LiveChat={true} />
                     </Col>
                     <Col md={6}>
                         <div className={styles.imgBox}>

@@ -13,7 +13,7 @@ const Banner = ({ data }) => {
                         <div className={styles.bannerTxt}>
                             <h1>{data.title}</h1>
                             <p>{data.desc}</p>
-                            <FlexBtn txt="Get Started" LiveChat={true} />
+                            <FlexBtn txt="Request a Quote" LiveChat={true} />
                         </div>
                     </Col>
                 </Row>

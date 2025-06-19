@@ -18,7 +18,7 @@ const SimpleContent = ({ data }) => {
                             <div className={styles.subtitle}>{data.subtitle}</div>
                             <h2>{data.title}</h2>
                             <div>{data.txt}</div>
-                            <FlexBtn txt="Get Started" LiveChat={true} />
+                            <FlexBtn txt="Request a Quote" LiveChat={true} />
                         </div>
                     </Col>
                 </Row>

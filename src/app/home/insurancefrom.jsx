@@ -47,7 +47,7 @@ const InsuranceFrom = () => {
                         <div className={styles.insuranceFrom}>
                             <div className={styles.headingBox}>
                                 <div className={styles.subtitle}>Insurance Made Simple</div>
-                                <h2>Get Started With Your <span>Insurance Information</span> Request</h2>
+                                <h2>Request a Quote With Your <span>Insurance Information</span> Request</h2>
                             </div>
                             <form className={styles.formBox} onSubmit={handleSubmit}>
                                 <div className={styles.inputBox}>

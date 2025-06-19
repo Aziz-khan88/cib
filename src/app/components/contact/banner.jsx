@@ -53,7 +53,7 @@ const Banner = () => {
                     <Col md={6} className="m-auto text-center mb-md-2 mb-lg-3 mb-xl-4">
                         <h1>Contact Us</h1>
                         <p>
-                            Have questions or ready to get started? Reach out to us today, and our team of experts will guide you to the best coverage for your needs!
+                            Have questions or ready to Request a Quote? Reach out to us today, and our team of experts will guide you to the best coverage for your needs!
                         </p>
                     </Col>
                 </Row>

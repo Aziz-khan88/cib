@@ -14,7 +14,7 @@ const ContenSection = ({ data }) => {
                             <div className={styles.para}>
                                 {data.desc}
                             </div>
-                            <FlexBtn txt="Get Started" LiveChat={true} />
+                            <FlexBtn txt="Request a Quote" LiveChat={true} />
                         </div>
                     </Col>
 

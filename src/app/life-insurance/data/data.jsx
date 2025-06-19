@@ -65,7 +65,7 @@ export const SimpleData1 = {
     </>),
     txt: (<>
         <p>Choosing the right life insurance in Brentwood, CA, is an important step in securing your financial future. Our team is ready to help you explore options that match your goals, providing tailored solutions that offer lasting protection for your loved ones.</p>
-        <p>For more information or to discuss your options in detail, don’t hesitate to reach out. You can contact us directly to get started. We’re here to help you secure the future with confidence</p>
+        <p>For more information or to discuss your options in detail, don’t hesitate to reach out. You can contact us directly to Request a Quote. We’re here to help you secure the future with confidence</p>
     </>),
 
 }
