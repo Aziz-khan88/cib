@@ -1,0 +1,33 @@
+.brokerSection {
+  background: #ededed;
+  position: relative;
+  padding-bottom: 200px;
+  &::after {
+    content: "";
+    clip-path: ellipse(55% 100% at 50% 100%);
+    z-index: -9;
+    background: #ffffff;
+    width: 100%;
+    height: 120px;
+    display: block;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    z-index: -0;
+  }
+  .divContent {
+    position: relative;
+    z-index: 1;
+  }
+  .imgBox {
+    position: relative;
+    height: 100%;
+    width: auto;
+    z-index: 1;
+    min-height: 500px;
+    img {
+      border-radius: 20px 20px 100px 50px;
+      object-fit: cover;
+    }
+  }
+}

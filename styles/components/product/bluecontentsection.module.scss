@@ -1,0 +1,18 @@
+.blueSection {
+  background: #263358;
+  h2,
+  h3,
+  p {
+    color: #fff;
+  }
+  .imgBox {
+    position: relative;
+    height: 100%;
+    min-height: 470px;
+    img {
+      border-radius: 20px;
+      object-fit: cover;
+      object-position: top center;
+    }
+  }
+}

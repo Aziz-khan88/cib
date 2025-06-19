@@ -1,0 +1,20 @@
+.LogoBoxSection {
+  background: #ca0101;
+  .logoMainBox {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    .imgBox {
+      position: relative;
+      height: 80px;
+      flex: 0 0 calc(100% / 5);
+      img {
+        object-fit: contain;
+      }
+      &:last-child {
+        flex: 0 0 80px;
+      }
+    }
+  }
+}

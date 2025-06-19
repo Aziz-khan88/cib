@@ -1,0 +1,113 @@
+//Banner
+import BannerPoster from "media/home/bannerImage.webp"
+import { BusinessIcon, HomeIcon, MedicalIcon, RentersIcon, UmbrellaIcon, WildfireIcon } from "../../app-constants"
+
+
+export const BannerData = {
+    title: (<>
+        Insurance Broker <span>in California</span>
+    </>),
+    desc: "Trust our insurance brokers in California to find the perfect policy that works for you.",
+    BannerPoster: BannerPoster.src
+}
+
+export const ProductListingData = {
+    title: (<>Comprehensive <span>insurance services</span></>),
+    txt: "Request your free policy review today",
+    productlisting: [
+        {
+            icon: <HomeIcon />,
+            title: "Homeowner Insurance",
+            txt: "Your home is more than a house; it's where memories are made. Protect it with our homeowner insurance, which covers property damage and liability for your safety, both inside and outside.",
+            link: "/homeowner-insurance"
+        },
+        {
+            icon: <WildfireIcon />,
+            title: "Wildfire Home Insurance",
+            txt: "In California, wildfires pose a significant threat. Our wildfire home insurance protects your home and belongings in case of disaster. Secure your property with the right coverage.",
+            link: "/wildfire-home-insurance"
+        },
+        {
+            icon: <RentersIcon />,
+            title: "Renters Insurance",
+            txt: "Renting doesn’t mean sacrificing protection. Renters insurance protects your personal property from theft, fire, and other damage at an affordable price. Get the coverage you deserve for your belongings.",
+            link: "/renters-insurance"
+        },
+        {
+            icon: <UmbrellaIcon />,
+            title: "Boat & Watercraft Insurance",
+            txt: "Stay protected on the water with our boat and watercraft insurance. We cover your vessel, gear, and liability to ensure your adventures are safe and enjoyable, whether on a lake or the ocean.",
+            link: "/boat-insurance"
+        },
+        {
+            icon: <UmbrellaIcon />,
+            title: "Motorcycle Insurance",
+            txt: "Feel the freedom of the road with motorcycle insurance that keeps you safe. Our coverage protects against accidents, theft, and injury, so you’re covered wherever you ride.",
+            link: "/motorcycle-insurance"
+        },
+        {
+            icon: <UmbrellaIcon />,
+            title: "Condo Insurance",
+            txt: "Your condo is unique, and so are your insurance needs. Our condo insurance provides coverage for personal property, liability, and additional benefits. Protect your unit from unexpected events.",
+            link: "/condo-insurance"
+        },
+        {
+            icon: <BusinessIcon />,
+            title: "Business Insurance",
+            txt: "Protect your business with tailored insurance covering liability, property, workers’ compensation, and more. Secure your company’s future with reliable coverage tailored to your needs.",
+            link: "/business-insurance"
+        },
+
+        {
+            icon: <MedicalIcon />,
+            title: "Medical Malpractice Insurance",
+            txt: "Your practice relies on trust. Medical malpractice insurance safeguards your , allowing  focus on patient care with confidence.",
+            link: "/medical-malpractice-insurance"
+        }
+    ]
+}
+import HomeCar from "media/home/HomeCar.webp"
+export const HomeContentData = {
+    subtitle: "About Circadian Insurance Brokers",
+    title: (<>
+        Your Perfect Quote and <span>Quote Insurance Broker</span>
+    </>
+    ),
+    txt: (<>
+        <p>Looking for an insurance broker who gets you? At Circadian Insurance Brokers, we’re not here to just sell you a policy — we’re here to give you the coverage that fits your life. As your quote insurance broker, we cut through the clutter to bring you the best deals, fast and simple.</p>
+        <p>We’ve been helping Californians like you find the right insurance since 2000. Whether you’re after home, auto, or business insurance, our quote and quote insurance brokers work with top carriers to get you the perfect coverage at the best price.</p>
+        <p>With over 30 years of combined experience, we focus on building relationships, not just policies. So, when you're ready to make sure you're covered without the headache, we’re here to help make it quick, easy, and stress-free.</p>
+    </>),
+    img: HomeCar.src
+}
+
+
+
+
+
+import BgImage from "media/product/ProductContentImg.webp"
+export const ProductContentData = {
+    title: (<>
+        Top Insurance <span>Broker in California</span> is Here for You!
+    </>),
+    desc: (<>
+        <p>Looking for an insurance broker in California who genuinely cares? At Circadian Insurance Brokers, we’re all about finding you the best coverage, no matter your needs. We know California’s unique insurance landscape and will guide you every step of the way.</p>
+        <p>We don't just find policies; we build relationships. We aim to understand your lifestyle, budget, and goals to offer the perfect plan. As your insurance broker in California, we’ll ensure you have coverage that perfectly matches your needs.</p>
+        <p>Ready for the real deal? Don’t settle for anything less than the best. Reach out today, and let's get you a quote that's simple, affordable, and tailored just for you.</p>
+    </>),
+    img: BgImage.src
+}
+
+
+import ContentImage from "media/home/ContentImage.webp"
+export const ContetnData = {
+    title: (<>
+        Top Insurance <span>Broker in California</span> is Here for You!
+    </>),
+    txt: (<>
+        <p>Looking for an insurance broker in California who genuinely cares? At Circadian Insurance Brokers, we’re all about finding you the best coverage, no matter your needs. We know California’s unique insurance landscape and will guide you every step of the way.</p>
+        <p>We don't just find policies; we build relationships. We aim to understand your lifestyle, budget, and goals to offer the perfect plan. As your insurance broker in California, we’ll ensure you have coverage that perfectly matches your needs.</p>
+        <p>Ready for the real deal? Don’t settle for anything less than the best. Reach out today, and let's get you a quote that's simple, affordable, and tailored just for you.</p>
+    </>),
+    img: ContentImage.src
+}
