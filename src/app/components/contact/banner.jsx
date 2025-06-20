@@ -24,7 +24,7 @@ const Banner = () => {
         const data = Object.fromEntries(form.entries());
 
         try {
-            const res = await fetch('/api/submit-insurance', {
+            const res = await fetch('api/submit-insurance', {
                 method: 'POST',
                 body: JSON.stringify(data),
                 headers: {
