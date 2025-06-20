@@ -13,6 +13,10 @@ export async function POST(req) {
             scopes: ['https://www.googleapis.com/auth/spreadsheets'],
         });
 
+        console.log("Using client email:", process.env.CLIENT_EMAIL);
+        console.log("Sheet ID:", process.env.GOOGLE_SHEET_ID);
+        console.log("Key starts with:", process.env.PRIVATE_KEY?.substring(0, 30));
+
         const sheets = google.sheets({ version: 'v4', auth });
 
         await sheets.spreadsheets.values.append({
