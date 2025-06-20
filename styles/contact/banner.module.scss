@@ -131,7 +131,7 @@
     .addList {
       li {
         display: flex;
-        margin-bottom: 40px;
+        margin-bottom: 20px;
         .icon {
           flex: 0 0 40px;
           margin-right: 20px;
@@ -154,11 +154,18 @@
             font-size: 15px;
             line-height: 20px;
             color: #ffffff;
-            margin-bottom: 0px;
+            margin-bottom: 20px;
+            a {
+              color: #ffffff;
+              &:hover {
+                color: #ca0101;
+              }
+            }
           }
         }
 
         .hours {
+          margin-top: 20px;
           li {
             font-style: normal;
             font-weight: 400;
@@ -167,7 +174,7 @@
             color: #ffffff;
             margin-bottom: 10px;
             span {
-              margin-left: 30px;
+              width: 130px;
             }
           }
         }

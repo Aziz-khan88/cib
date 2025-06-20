@@ -1,5 +1,5 @@
 //Banner
-import BannerPoster from "media/product/auto/bannerImage.webp"
+import BannerPoster from "media/product/motercycle/bannerImage.webp"
 
 export const BannerData = {
     title: (<>
@@ -9,7 +9,7 @@ export const BannerData = {
     BannerPoster: BannerPoster.src
 }
 //Broker
-import BannerImg from "media/product/auto/imageContact.webp"
+import BannerImg from "media/product/motercycle/imageContact.webp"
 
 export const BrokerData = {
     title: (<>
@@ -40,7 +40,7 @@ export const SimpleData = {
 
 }
 
-import BannerImg1 from "media/product/life-insurance/blueContent.webp"
+import BannerImg1 from "media/product/motercycle/blueContent.webp"
 export const BlueContentData = {
     title: (<>
         Get the <span>Ultimate Motorcycle Insurance</span> Coverage in Brentwood, CA

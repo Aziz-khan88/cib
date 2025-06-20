@@ -14,7 +14,7 @@ const Page = () => {
       <SimpleContent data={SimpleData} />
       <BlueContentSection data={BlueContentData} />
       <SimpleContent data={SimpleData1} pt={true} />
-      <Testimonial data={TestimonialData} bgColor={true} />
+      <Testimonial data={TestimonialData} />
       <ContenSection data={ProductContentData} />
     </>
   );

@@ -1,5 +1,5 @@
 //Banner
-import BannerPoster from "media/product/auto/bannerImage.webp"
+import BannerPoster from "media/product/umbrella/bannerImage.webp"
 
 export const BannerData = {
     title: (<>
@@ -9,7 +9,7 @@ export const BannerData = {
     BannerPoster: BannerPoster.src
 }
 //Broker
-import BannerImg from "media/product/auto/imageContact.webp"
+import BannerImg from "media/product/umbrella/imageContact.webp"
 
 export const BrokerData = {
     title: (<>
@@ -42,7 +42,7 @@ export const SimpleData = {
 
 }
 
-import BannerImg1 from "media/product/life-insurance/blueContent.webp"
+import BannerImg1 from "media/product/umbrella/blueContent.webp"
 export const BlueContentData = {
     title: (<>
         Your Safety Net for <span>Life’s Unexpected Turns</span>
@@ -93,7 +93,7 @@ export const TestimonialData = [
     },
 ]
 
-import ProductImg from "media/product/business/ProductContentImg.webp"
+import ProductImg from "media/product/umbrella/ProductContentImg.webp"
 export const ProductContentData = {
     title: (<>
         Let’s Make Sure <span>You’re Truly Covered</span>

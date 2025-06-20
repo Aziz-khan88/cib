@@ -10,7 +10,7 @@ import {
     PhoneIcon,
     PinIcon,
 } from "@/src/app/app-constants";
-import toast, { Toaster } from "react-hot-toast";
+import toast from "react-hot-toast";
 
 const Banner = () => {
 
@@ -143,8 +143,13 @@ const Banner = () => {
                                     <div className={styles.icon}><PhoneIcon /></div>
                                     <div className={styles.value}>
                                         <h6>Phone Number</h6>
-                                        <p>925-417-8500</p>
-                                        <p>925-417-8500</p>
+                                        <p>
+                                            <a href="tel:9254178500">925-417-8500</a>
+                                        </p>
+                                        <h6>Toll Free</h6>
+                                        <p>
+                                            <a href="tel:8774177171">877-417-7171</a>
+                                        </p>
                                     </div>
                                 </li>
                                 <li>
@@ -152,13 +157,13 @@ const Banner = () => {
                                     <div className={styles.value}>
                                         <h6>Opening Hours</h6>
                                         <ul className={styles.hours}>
-                                            <li>Monday <span>9:00 AM – 5:00 PM</span></li>
-                                            <li>Tuesday <span>9:00 AM – 5:00 PM</span></li>
-                                            <li>Wednesday <span>9:00 AM – 5:00 PM</span></li>
-                                            <li>Thursday <span>9:00 AM – 5:00 PM</span></li>
-                                            <li>Friday <span>9:00 AM – 5:00 PM</span></li>
-                                            <li>Saturday <span>Closed</span></li>
-                                            <li>Sunday <span>Closed</span></li>
+                                            <li><span>Monday</span> 9:00 AM – 5:00 PM</li>
+                                            <li><span>Tuesday </span>9:00 AM – 5:00 PM</li>
+                                            <li><span>Wednesday </span>9:00 AM – 5:00 PM</li>
+                                            <li><span>Thursday </span>9:00 AM – 5:00 PM</li>
+                                            <li><span>Friday </span>9:00/AM – 5:00 PM</li>
+                                            <li><span>Saturday </span>Closed</li>
+                                            <li><span>Sunday </span>Closed</li>
                                         </ul>
                                     </div>
                                 </li>
@@ -186,7 +191,7 @@ const Banner = () => {
                     </Col>
                 </Row>
             </Container>
-        </section>
+        </section >
     );
 };
 

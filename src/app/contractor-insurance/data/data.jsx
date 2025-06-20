@@ -1,5 +1,5 @@
 //Banner
-import BannerPoster from "media/product/auto/bannerImage.webp"
+import BannerPoster from "media/product/contractor/bannerImage.webp"
 
 export const BannerData = {
     title: (<>
@@ -9,7 +9,7 @@ export const BannerData = {
     BannerPoster: BannerPoster.src
 }
 //Broker
-import BannerImg from "media/product/auto/imageContact.webp"
+import BannerImg from "media/product/contractor/imageContact.webp"
 
 export const BrokerData = {
     title: (<>

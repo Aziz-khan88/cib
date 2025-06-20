@@ -1,5 +1,5 @@
 //Banner
-import BannerPoster from "media/product/auto/bannerImage.webp"
+import BannerPoster from "media/product/condo/bannerImage.webp"
 
 export const BannerData = {
     title: (<>
@@ -9,7 +9,7 @@ export const BannerData = {
     BannerPoster: BannerPoster.src
 }
 //Broker
-import BannerImg from "media/product/auto/imageContact.webp"
+import BannerImg from "media/product/condo/imageContact.webp"
 
 export const BrokerData = {
     title: (<>
@@ -55,7 +55,7 @@ export const TestimonialData = [
     },
 ]
 
-import BgImage from "media/product/auto/ProductContentImg.webp"
+import BgImage from "media/product/condo/ProductContentImg.webp"
 export const ProductContentData = {
     title: (<>
         Why Condo Insurance is <span>Essential for Every</span> Condo Owner

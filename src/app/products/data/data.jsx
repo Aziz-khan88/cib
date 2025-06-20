@@ -1,6 +1,6 @@
 //Banner
 import BannerPoster from "media/product/bannerImage.webp"
-import { AutoIcon, BusinessIcon, CommercialIcon, EarthquakeIcon, FloodIcon, HomeIcon, LifeIcon, MedicalIcon, RentersIcon, UmbrellaIcon, WildfireIcon } from "../../app-constants"
+import { AutoIcon, BoatIcon, BusinessIcon, CommercialIcon, CondoIcon, ContractorIcon, EarthquakeIcon, FloodIcon, HomeIcon, LifeIcon, MedicalIcon, MotorcycleIcon, RentersIcon, UmbrellaIcon, WildfireIcon } from "../../app-constants"
 
 export const BannerData = {
     title: (<>
@@ -79,26 +79,26 @@ export const ProductListingData = {
             link: "/umbrella-insurance"
         },
         {
-            icon: <UmbrellaIcon />,
+            icon: <BoatIcon />,
             title: "Boat & Watercraft Insurance",
             txt: "Stay protected on the water with our boat and watercraft insurance. We cover your vessel, gear, and liability to ensure your adventures are safe and enjoyable, whether on a lake or the ocean.",
             link: "/boat-insurance"
         },
         {
-            icon: <UmbrellaIcon />,
+            icon: <CondoIcon />,
             title: "Condo Insurance",
             txt: "Your condo is unique, and so are your insurance needs. Our condo insurance provides coverage for personal property, liability, and additional benefits. Protect your unit from unexpected events.",
             link: "/condo-insurance"
         },
         {
-            icon: <UmbrellaIcon />,
+            icon: <ContractorIcon />,
             title: "Contractor Insurance",
             txt: "As a contractor, you encounter unique risks daily. Our insurance protects against property damage, worker injuries, and liability, allowing you to focus on your work with confidence.",
             link: "/contractor-insurance"
         }
         ,
         {
-            icon: <UmbrellaIcon />,
+            icon: <MotorcycleIcon />,
             title: "Motorcycle Insurance",
             txt: "Feel the freedom of the road with motorcycle insurance that keeps you safe. Our coverage protects against accidents, theft, and injury, so you’re covered wherever you ride.",
             link: "/motorcycle-insurance"

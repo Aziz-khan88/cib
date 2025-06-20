@@ -3,7 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { Col, Container, Form, Row } from "react-bootstrap";
 import MainLogo from "media/layout/footerLogo.webp"
-import { FooterArrow, PhoneIcon, PinIcon } from "@/src/app/app-constants";
+import { EmailIcon, FooterArrow, PhoneIcon, PinIcon } from "@/src/app/app-constants";
 
 const data = [
     {
@@ -98,11 +98,11 @@ const Footer = () => {
                                 <ul className={styles.infoContact}>
                                     <li>
                                         <span><PhoneIcon /></span>
-                                        <a href="mailto:rudy@circadianbrokers.com">rudy@circadianbrokers.com</a>
+                                        <a href="tel:9254178500">925-417-8500</a>
                                     </li>
                                     <li>
                                         <span><PhoneIcon /></span>
-                                        <a href="tel:925-417-8500">925-417-8500</a>
+                                        <a href="tel:8774177171">877-417-7171</a>
                                     </li>
                                     <li>
                                         <span><PinIcon /></span>

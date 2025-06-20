@@ -1,5 +1,5 @@
 //Banner
-import BannerPoster from "media/product/auto/bannerImage.webp"
+import BannerPoster from "media/product/rental/bannerImage.webp"
 
 export const BannerData = {
     title: (<>
@@ -9,7 +9,7 @@ export const BannerData = {
     BannerPoster: BannerPoster.src
 }
 //Broker
-import BannerImg from "media/product/auto/imageContact.webp"
+import BannerImg from "media/product/rental/imageContact.webp"
 
 export const BrokerData = {
     title: (<>
@@ -48,7 +48,7 @@ export const SimpleData = {
 
 }
 
-import BannerImg1 from "media/product/life-insurance/blueContent.webp"
+import BannerImg1 from "media/product/rental/blueContent.webp"
 export const BlueContentData = {
     title: (<>
         Find Affordable <span>Renters Insurance</span> in Brentwood That Fits You
@@ -71,7 +71,7 @@ export const SimpleData1 = {
     </>),
 
 }
-
+import BannerImg2 from "media/product/rental/blueContent1.webp"
 export const BlueContentData1 = {
     title: (<>
         Small Monthly Cost, <span>Big Everyday</span> Protection
@@ -79,7 +79,7 @@ export const BlueContentData1 = {
     txt: (<>
         <p>It’s easy to overlook renters insurance until you really need it. For just a few dollars a month, you’re getting protection that can save you from major headaches down the line. From covering stolen electronics to helping with temporary housing after a disaster, renters insurance quietly has your back when things go wrong. It’s one of those small decisions that make a big difference when life throws a curveball.</p>
     </>),
-    img: BannerImg1.src
+    img: BannerImg2.src
 }
 
 
@@ -107,7 +107,7 @@ export const TestimonialData = [
     },
 ]
 
-import ProductImg from "media/product/business/ProductContentImg.webp"
+import ProductImg from "media/product/rental/ProductContentImg.webp"
 export const ProductContentData = {
     title: (<>
         Let’s Make Sure <span>You’re Truly Covered</span>

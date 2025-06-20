@@ -1,6 +1,6 @@
 //Banner
 import BannerPoster from "media/home/bannerImage.webp"
-import { BusinessIcon, HomeIcon, MedicalIcon, RentersIcon, UmbrellaIcon, WildfireIcon } from "../../app-constants"
+import { BoatIcon, BusinessIcon, CondoIcon, HomeIcon, MedicalIcon, MotorcycleIcon, RentersIcon, WildfireIcon } from "../../app-constants"
 
 
 export const BannerData = {
@@ -15,6 +15,9 @@ export const ProductListingData = {
     title: (<>Comprehensive <span>insurance services</span></>),
     txt: "Request your free policy review today",
     productlisting: [
+
+
+
         {
             icon: <HomeIcon />,
             title: "Homeowner Insurance",
@@ -34,19 +37,19 @@ export const ProductListingData = {
             link: "/renters-insurance"
         },
         {
-            icon: <UmbrellaIcon />,
+            icon: <BoatIcon />,
             title: "Boat & Watercraft Insurance",
             txt: "Stay protected on the water with our boat and watercraft insurance. We cover your vessel, gear, and liability to ensure your adventures are safe and enjoyable, whether on a lake or the ocean.",
             link: "/boat-insurance"
         },
         {
-            icon: <UmbrellaIcon />,
+            icon: <MotorcycleIcon />,
             title: "Motorcycle Insurance",
             txt: "Feel the freedom of the road with motorcycle insurance that keeps you safe. Our coverage protects against accidents, theft, and injury, so you’re covered wherever you ride.",
             link: "/motorcycle-insurance"
         },
         {
-            icon: <UmbrellaIcon />,
+            icon: <CondoIcon />,
             title: "Condo Insurance",
             txt: "Your condo is unique, and so are your insurance needs. Our condo insurance provides coverage for personal property, liability, and additional benefits. Protect your unit from unexpected events.",
             link: "/condo-insurance"
@@ -57,33 +60,30 @@ export const ProductListingData = {
             txt: "Protect your business with tailored insurance covering liability, property, workers’ compensation, and more. Secure your company’s future with reliable coverage tailored to your needs.",
             link: "/business-insurance"
         },
-
         {
             icon: <MedicalIcon />,
             title: "Medical Malpractice Insurance",
             txt: "Your practice relies on trust. Medical malpractice insurance safeguards your , allowing  focus on patient care with confidence.",
             link: "/medical-malpractice-insurance"
         }
+
+
     ]
 }
 import HomeCar from "media/home/HomeCar.webp"
 export const HomeContentData = {
     subtitle: "About Circadian Insurance Brokers",
     title: (<>
-        Your Perfect Quote and <span>Quote Insurance Broker</span>
+        Why Choose <span>Circadian Insurance Brokers?</span>
     </>
     ),
     txt: (<>
-        <p>Looking for an insurance broker who gets you? At Circadian Insurance Brokers, we’re not here to just sell you a policy — we’re here to give you the coverage that fits your life. As your quote insurance broker, we cut through the clutter to bring you the best deals, fast and simple.</p>
-        <p>We’ve been helping Californians like you find the right insurance since 2000. Whether you’re after home, auto, or business insurance, our quote and quote insurance brokers work with top carriers to get you the perfect coverage at the best price.</p>
+        <p>Looking for an insurance broker who gets you? At Circadian Insurance Brokers, we’re not here to just sell you a policy — we’re here to give you the coverage that fits your life. As your insurance broker, we cut through the clutter to bring you the best deals, fast and simple.</p>
+        <p>We’ve been helping Californians like you find the right insurance since 2000. Whether you’re after home, auto, or business insurance, our insurance brokers work with top carriers to get you the perfect coverage at the best price.</p>
         <p>With over 30 years of combined experience, we focus on building relationships, not just policies. So, when you're ready to make sure you're covered without the headache, we’re here to help make it quick, easy, and stress-free.</p>
     </>),
     img: HomeCar.src
 }
-
-
-
-
 
 import BgImage from "media/product/ProductContentImg.webp"
 export const ProductContentData = {
