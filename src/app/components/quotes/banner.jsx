@@ -94,11 +94,11 @@ const Banenr = () => {
                             </div>
                             <div className={styles.inputBox}>
                                 <label>Type(s) of Insurance</label>
-                                <input type="text" name="insuranceTypes" placeholder="Type your full Insurance*" />
+                                <input type="text" name="insurance" placeholder="Type your full Insurance*" />
                             </div>
                             <div className={styles.inputBox}>
                                 <label>Comments</label>
-                                <textarea name="comments" rows="4" placeholder="Type your Details*" />
+                                <textarea name="msg" rows="4" placeholder="Type your Details*" />
                             </div>
                             <div className={styles.inputCheckbox}>
                                 <label>
