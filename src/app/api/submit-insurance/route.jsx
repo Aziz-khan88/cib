@@ -37,16 +37,16 @@ export async function POST(req) {
             from: process.env.EMAIL_USER,
             to: process.env.EMAIL_USER,
             subject: 'New Insurance Submission',
-            text: ` Name: ${name}
-                    Email: ${email}
-                    Phone: ${phone}
-                    Insurance Type: ${insurance}
-                    Contact Method: ${contact}
-                    Address: ${address}
-                    City: ${city}
-                    State: ${state}
-                    Zip Code: ${zip}
-                    Message: ${msg}`,
+            text: `Name: ${name}
+            Email: ${email}
+            Phone: ${phone}
+            Insurance Type: ${insurance}
+            Contact Method: ${contact}
+            Address: ${address}
+            City: ${city}
+            State: ${state}
+            Zip Code: ${zip}
+            Message: ${msg}`,
         });
 
         return NextResponse.json({ message: 'Submitted successfully' }, { status: 200 });
