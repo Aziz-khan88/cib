@@ -173,8 +173,10 @@
         &:last-child {
           a {
             height: 40px;
-            width: 120px;
-            font-weight: 500;
+            width: 140px;
+            padding: 0px 10px;
+            font-size: 13px;
+            font-weight: 400;
           }
         }
       }
@@ -199,7 +201,9 @@
         &:last-child {
           a {
             height: 35px;
-            width: 110px;
+            width: 140px;
+            padding: 0px 10px;
+            font-size: 13px;
             font-weight: 400;
           }
         }
@@ -251,8 +255,10 @@
           }
           &:last-child {
             a {
-              height: 35px;
-              width: 120px;
+              height: 40px;
+              width: 140px;
+              padding: 0px 10px;
+              font-size: 13px;
               font-weight: 400;
             }
           }

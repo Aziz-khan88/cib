@@ -16,6 +16,7 @@
     align-items: center;
     border-radius: 52px;
     transition: background 0.3s ease;
+    padding: 0px 10px;
     cursor: pointer;
     &:hover {
       background: #263358;
@@ -49,6 +50,7 @@
       height: 45px;
       width: 160px;
       font-weight: 500;
+      font-size: 14px;
     }
   }
 }
@@ -58,8 +60,8 @@
     .btnCommon {
       height: 42px;
       width: 150px;
-      font-weight: 500;
-      font-size: 15px;
+      font-weight: 400;
+      font-size: 14px;
     }
   }
 }
@@ -68,9 +70,9 @@
     gap: 5px;
     .btnCommon {
       height: 40px;
-      width: 140px;
-      font-weight: 500;
-      font-size: 15px;
+      width: 150px;
+      font-weight: 400;
+      font-size: 13px;
     }
   }
 }
@@ -79,8 +81,8 @@
     gap: 2px;
     .btnCommon {
       height: 35px;
-      width: 110px;
-      font-weight: 500;
+      width: 140px;
+      font-weight: 400;
       font-size: 13px;
     }
   }
@@ -90,8 +92,8 @@
     gap: 5px;
     .btnCommon {
       height: 35px;
-      width: 110px;
-      font-weight: 500;
+      width: 140px;
+      font-weight: 400;
       font-size: 13px;
     }
   }

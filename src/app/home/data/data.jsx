@@ -102,12 +102,11 @@ export const ProductContentData = {
 import ContentImage from "media/home/ContentImage.webp"
 export const ContetnData = {
     title: (<>
-        Top Insurance <span>Broker in California</span> is Here for You!
+        Why Trust Us as <span>Your Broker?</span>
     </>),
     txt: (<>
-        <p>Looking for an insurance broker in California who genuinely cares? At Circadian Insurance Brokers, we’re all about finding you the best coverage, no matter your needs. We know California’s unique insurance landscape and will guide you every step of the way.</p>
-        <p>We don't just find policies; we build relationships. We aim to understand your lifestyle, budget, and goals to offer the perfect plan. As your insurance broker in California, we’ll ensure you have coverage that perfectly matches your needs.</p>
-        <p>Ready for the real deal? Don’t settle for anything less than the best. Reach out today, and let's get you a quote that's simple, affordable, and tailored just for you.</p>
+        <p>Choosing the right insurance broker in California is a big deal, so we’re here to make it easy for you. At Circadian Insurance Brokers, we’re all about YOU. Forget the cookie-cutter solutions — we craft personalized, top-tier insurance plans that match your needs and budget. Our team doesn’t just provide insurance; we build trust and deliver results.</p>
+        <p>Why settle for less when you can work with the best? As your dedicated insurance broker in California, we work with leading insurance providers, offering unbeatable coverage options at competitive rates. We’re local, experienced, and here to give you the peace of mind you deserve. Ready to experience the difference?</p>
     </>),
     img: ContentImage.src
 }

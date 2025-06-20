@@ -13,7 +13,7 @@ const Page = () => {
       <Broker data={BrokerData} />
       <SimpleContent data={SimpleData} />
       <BlueContentSection data={BlueContentData} />
-      <SimpleContent data={SimpleData1} />
+      <SimpleContent data={SimpleData1} pt={true} />
       <BlueContentSection data={BlueContentData1} />
       <Testimonial data={TestimonialData} />
       <ContenSection data={ProductContentData} />
