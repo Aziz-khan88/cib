@@ -11,10 +11,11 @@ import {
     PinIcon,
 } from "@/src/app/app-constants";
 import toast from "react-hot-toast";
+import { useRouter } from "next/navigation";
 
 const Banner = () => {
-
     const [isSubmitting, setIsSubmitting] = useState(false);
+    const router = useRouter();
 
     const handleSubmit = async (e) => {
         e.preventDefault();
@@ -37,6 +38,7 @@ const Banner = () => {
             if (res.ok) {
                 toast.success(json.message || "Submitted successfully!");
                 e.target.reset();
+                router.push("/thank-you");
             } else {
                 toast.error(json.message || "Submission failed.");
             }
@@ -46,6 +48,7 @@ const Banner = () => {
             setIsSubmitting(false);
         }
     };
+
     return (
         <section className={styles.bannerSection}>
             <Container>
@@ -115,13 +118,13 @@ const Banner = () => {
                                 </button>
                             </div>
                             <p>
-                                We respect your privacy. Your info will be sent securely and handled with care.{" "}
+                                We respect your privacy. Your info will be sent securely and handled with care. {" "}
                                 <Link href="#">View privacy policy.</Link>
                             </p>
                         </form>
                     </Col>
 
-                    <Col md={6} lg={5} >
+                    <Col md={6} lg={5}>
                         <div className={styles.addressBox}>
                             <h4>Information</h4>
                             <ul className={styles.addList}>
@@ -191,7 +194,7 @@ const Banner = () => {
                     </Col>
                 </Row>
             </Container>
-        </section >
+        </section>
     );
 };
 

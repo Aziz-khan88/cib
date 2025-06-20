@@ -10,7 +10,7 @@ const ThankYouPage = () => {
           <Col md={6} className="m-auto text-center">
             <div className={styles.boxTitle}>
               <h1>Thank You!</h1>
-              <p>Your  insurance form has been submitted successfully.</p>
+              <p>Our team is reviewing your information and will contact you with a personalized insurance quote.</p>
               <Link href="/">Back To Home</Link>
             </div>
           </Col>

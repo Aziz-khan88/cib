@@ -3,10 +3,11 @@ import { useState } from "react";
 import styles from "@/styles/home/insurancefrom.module.scss";
 import { Col, Container, Row } from "react-bootstrap";
 import toast from "react-hot-toast";
-
+import { useRouter } from "next/navigation";
 
 const InsuranceFrom = () => {
     const [isSubmitting, setIsSubmitting] = useState(false);
+    const router = useRouter(); // ✅ Init router
 
     const handleSubmit = async (e) => {
         e.preventDefault();
@@ -29,6 +30,7 @@ const InsuranceFrom = () => {
             if (res.ok) {
                 toast.success(json.message || "Submitted successfully!");
                 e.target.reset();
+                router.push("/thank-you"); // ✅ Redirect
             } else {
                 toast.error(json.message || "Submission failed.");
             }

@@ -1,10 +1,49 @@
+"use client";
+import { useState } from "react";
 import styles from "@/styles/quotes/banner.module.scss";
 import Image from "next/image";
 import { Col, Container, Row } from "react-bootstrap";
 import IMG from "media/quotes/imageContact.webp"
 import Link from "next/link";
+import toast from "react-hot-toast";
+import { useRouter } from "next/navigation";
 
 const Banenr = () => {
+    const [isSubmitting, setIsSubmitting] = useState(false);
+    const router = useRouter();
+
+    const handleSubmit = async (e) => {
+        e.preventDefault();
+        setIsSubmitting(true);
+
+        const form = new FormData(e.target);
+        const data = Object.fromEntries(form.entries());
+
+        try {
+            const res = await fetch('/api/submit-insurance', {
+                method: 'POST',
+                body: JSON.stringify(data),
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+            });
+
+            const json = await res.json();
+
+            if (res.ok) {
+                toast.success(json.message || "Submitted successfully!");
+                e.target.reset();
+                router.push("/thank-you");
+            } else {
+                toast.error(json.message || "Submission failed.");
+            }
+        } catch (error) {
+            toast.error("Something went wrong. Please try again.");
+        } finally {
+            setIsSubmitting(false);
+        }
+    };
+
     return (
         <section className={styles.bannerSection}>
             <Container>
@@ -16,7 +55,7 @@ const Banenr = () => {
                 </Row>
                 <Row>
                     <Col md={6} className="my-auto">
-                        <form className={styles.formBox}>
+                        <form className={styles.formBox} onSubmit={handleSubmit}>
                             <div className={styles.inputBox}>
                                 <label>Name</label>
                                 <input type="text" name="name" required placeholder="Type your full name*" />
@@ -67,7 +106,9 @@ const Banenr = () => {
                                 </label>
                             </div>
                             <div className={styles.inputSubmit}>
-                                <button type="submit">Submit Details</button>
+                                <button type="submit" disabled={isSubmitting}>
+                                    {isSubmitting ? "Submitting..." : "Submit"}
+                                </button>
                             </div>
                             <p>We respect your privacy. Your info will be sent securely and handled with care.<Link href="">View privacy policy.</Link></p>
                         </form>
