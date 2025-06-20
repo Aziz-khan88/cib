@@ -6,7 +6,7 @@ export const BannerData = {
         Condo Insurance <span>in Brentwood,</span> CA That Fits Your Budget
     </>),
     desc: "",
-    BannerPoster: BannerPoster.src
+    BannerPoster: BannerPoster.src,
 }
 //Broker
 import BannerImg from "media/product/condo/imageContact.webp"

@@ -12,7 +12,7 @@ export const addToSheet = async (values = []) => {
     const sheets = google.sheets({ version: 'v4', auth: client });
 
     await sheets.spreadsheets.values.append({
-        spreadsheetId: '1xg2lr6wJcAiCKmOEHcXVy5ONJ45rTqW3jLzIfIxEUfk',
+        spreadsheetId: '1afC4BwJ-Mfj0jmSzCAAtvy7cRPmpV5n3AIIDLzJLcK4',
         range: 'Sheet1!A1',
         valueInputOption: 'USER_ENTERED',
         resource: {

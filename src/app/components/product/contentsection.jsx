@@ -3,7 +3,7 @@ import styles from "@/styles/components/product/contensection.module.scss";
 import FlexBtn from "@/src/app/components/common/flexbtn";
 
 
-const ContenSection = ({ data }) => {
+const ContenSection = ({ data, FromLink }) => {
     return (
         <section className={styles.contentSection} style={{ backgroundImage: `url(${data.img})` }}>
             <Container className="h-100">
@@ -14,7 +14,7 @@ const ContenSection = ({ data }) => {
                             <div className={styles.para}>
                                 {data.desc}
                             </div>
-                            <FlexBtn txt="Request a Quote" LiveChat={true} />
+                            <FlexBtn txt="Request a Quote" FromLink={FromLink} />
                         </div>
                     </Col>
 

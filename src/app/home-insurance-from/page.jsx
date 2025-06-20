@@ -1,21 +1,22 @@
 "use client";
-
+import { useRouter } from "next/navigation";
 import styles from "@/styles/components/common/home-insurance-from.module.scss";
 import { Col, Container, Row } from "react-bootstrap";
 import { useState } from "react";
+import toast from "react-hot-toast";
 
 const questions = [
   "Names and date of birth of all persons on the title",
   "Property address",
   "Mailing address, if different",
   "Is this a primary home, seasonal, or rental property",
-  "Year buil",
+  "Year built",
   "Square footage of living area",
   "Type of plumbing, i.e., copper, PVC, etc.",
   "Does the electrical system have circuit breakers",
   "Type of roof, and when was it last replaced",
   "Type of flooring and percentage, i.e., carpet 50%, hardwood 50%, etc.",
-  "Have you had any property claims in the past 5 years? If so, the year of claim and type ",
+  "Have you had any property claims in the past 5 years? If so, the year of claim and type",
   "Do you own any dogs? If so, breed and bite history",
   "Is there a swimming pool on premises? If so, does it have a diving board or slide",
   "Current or latest insurance carrier and Current Insurance expiration date or cancellation date",
@@ -25,49 +26,66 @@ const questions = [
   "Contact phone number",
   "How did you hear about us",
 ];
+
 const Page = () => {
   const [currentStep, setCurrentStep] = useState(0);
   const [answers, setAnswers] = useState(Array(questions.length).fill(""));
-  const [error, setError] = useState("");
-  const [formMessage, setFormMessage] = useState("");
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const router = useRouter();
 
   const handleChange = (e) => {
-    const updated = [...answers];
-    updated[currentStep] = e.target.value;
-    setAnswers(updated);
-    setError(""); // Clear field-level error when typing
+    const updatedAnswers = [...answers];
+    updatedAnswers[currentStep] = e.target.value;
+    setAnswers(updatedAnswers);
   };
 
   const handleNext = () => {
     if (answers[currentStep].trim() === "") {
-      setError("This field is required.");
+      toast.error("Please fill out this field.");
       return;
     }
     if (currentStep < questions.length - 1) {
       setCurrentStep(currentStep + 1);
-      setError(""); // Clear field error
     }
   };
 
   const handlePrev = () => {
     if (currentStep > 0) {
       setCurrentStep(currentStep - 1);
-      setError(""); // Clear field error
     }
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    if (answers.some((a) => a.trim() === "")) {
-      setFormMessage("Please answer all questions before submitting.");
+    if (answers.some((ans) => ans.trim() === "")) {
+      toast.error("Please answer all questions before submitting.");
       return;
     }
 
-    setFormMessage("Form submitted successfully!");
-    console.log("Form Submitted:", answers);
-    // Add API call here if needed
-  };
+    setIsSubmitting(true);
 
+    try {
+      const res = await fetch("/api/home-insurance", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(answers),
+      });
+
+      const data = await res.json();
+
+      if (res.ok) {
+        toast.success("Form submitted successfully!");
+        router.push("/thank-you");
+      } else {
+        toast.error(`Submission failed: ${data.message || "Unknown error"}`);
+      }
+    } catch (err) {
+      console.error("Submit error:", err);
+      toast.error("Something went wrong. Please try again.");
+    } finally {
+      setIsSubmitting(false);
+    }
+  };
   return (
     <section className={styles.homeSection}>
       <Container className="h-100">
@@ -79,17 +97,17 @@ const Page = () => {
             <form onSubmit={handleSubmit}>
               <div className={styles.questionSec}>
                 <div className={styles.questionTitle}>
-                  <span>{currentStep + 1}</span> : {questions[currentStep]}
+                  <span>{currentStep + 1}</span>: {questions[currentStep]}
                 </div>
+
                 <div className={styles.questionBox}>
                   <textarea
                     name={`q${currentStep + 1}`}
-                    placeholder="Write Here ..."
+                    placeholder="Write here..."
                     value={answers[currentStep]}
                     onChange={handleChange}
                     required
                   />
-                  {error && <div style={{ color: "red", marginTop: "5px" }}>{error}</div>}
                 </div>
 
                 <div className={styles.questionBtn}>
@@ -97,7 +115,9 @@ const Page = () => {
                     Prev
                   </button>
                   {currentStep === questions.length - 1 ? (
-                    <button type="submit">Submit</button>
+                    <button type="submit" disabled={isSubmitting}>
+                      {isSubmitting ? "Sending..." : "Submit"}
+                    </button>
                   ) : (
                     <button type="button" onClick={handleNext}>
                       Next
@@ -106,18 +126,7 @@ const Page = () => {
                 </div>
               </div>
 
-              {/* Form bottom message */}
-              {formMessage && (
-                <div
-                  style={{
-                    marginTop: "20px",
-                    color: formMessage.includes("successfully") ? "green" : "red",
-                    fontWeight: "bold",
-                  }}
-                >
-                  {formMessage}
-                </div>
-              )}
+
             </form>
           </Col>
         </Row>

@@ -8,8 +8,8 @@ import SimpleContent from "@/src/app/components/product/simplecontent";
 const Page = () => {
   return (
     <>
-      <Banner data={BannerData} />
-      <Broker data={BrokerData} />
+      <Banner data={BannerData} FromLink={true} />
+      <Broker data={BrokerData} FromLink={true} />
       <SimpleContent data={SimpleData} />
       <BlueContentSection data={BlueContentData} />
       <SimpleContent data={SimpleData1} pt={true} />

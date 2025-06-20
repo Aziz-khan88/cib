@@ -9,11 +9,11 @@ import SimpleContent from "@/src/app/components/product/simplecontent";
 const Page = () => {
   return (
     <>
-      <Banner data={BannerData} />
-      <Broker data={BrokerData} />
+      <Banner data={BannerData} FromLink={true} />
+      <Broker data={BrokerData} FromLink={true} />
       <SimpleContent data={SimpleData} />
       <Testimonial data={TestimonialData} />
-      <ContenSection data={ProductContentData} />
+      <ContenSection data={ProductContentData} FromLink={true} />
     </>
   );
 };
