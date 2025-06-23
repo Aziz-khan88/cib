@@ -1,6 +1,6 @@
 //Banner
 import BannerPoster from "media/home/bannerImage.webp"
-import { BoatIcon, BusinessIcon, CondoIcon, HomeIcon, MedicalIcon, MotorcycleIcon, RentersIcon, WildfireIcon } from "../../app-constants"
+import { BoatIcon, BusinessIcon, CondoIcon, HomeIcon, MedicalIcon, MotorcycleIcon, AutoIcon, WildfireIcon } from "../../app-constants"
 
 
 export const BannerData = {
@@ -31,10 +31,10 @@ export const ProductListingData = {
             link: "/wildfire-home-insurance"
         },
         {
-            icon: <RentersIcon />,
-            title: "Renters Insurance",
-            txt: "Renting doesn’t mean sacrificing protection. Renters insurance protects your personal property from theft, fire, and other damage at an affordable price. Get the coverage you deserve for your belongings.",
-            link: "/renters-insurance"
+            icon: <AutoIcon />,
+            title: "Auto Insurance",
+            txt: "Hit the road with confidence. Our auto insurance provides comprehensive coverage for your vehicle, protecting you from accidents and theft. Enjoy peace of mind with affordable options.",
+            link: "/auto-insurance"
         },
         {
             icon: <BoatIcon />,
