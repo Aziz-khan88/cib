@@ -1,11 +1,11 @@
 export const metadata = {
-  title: "Affordable Insurance Products for Every Need",
-  description: "Looking for the best insurance in California? Circadian Insurance Brokers offers a range of tailored plans, from auto to home and beyond.",
+  title: "Auto Insurance in Brentwood California",
+  description: "Looking for auto insurance in Brentwood California? Protect vehicles against accidents, theft, and more with our best auto insurance in Brentwood.",
   //===== OG Tags =====
   openGraph: {
-    title: "Affordable Insurance Products for Every Need",
-    description: "Looking for the best insurance in California? Circadian Insurance Brokers offers a range of tailored plans, from auto to home and beyond.",
-    url: "/product",
+    title: "Auto Insurance in Brentwood California",
+    description: "Looking for auto insurance in Brentwood California? Protect vehicles against accidents, theft, and more with our best auto insurance in Brentwood.",
+    url: "/auto-insurance",
     siteName: " Circadian Insurance Brokers",
     locale: "en_US",
     type: "website",

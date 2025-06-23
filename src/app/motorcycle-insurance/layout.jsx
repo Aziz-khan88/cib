@@ -1,18 +1,19 @@
 export const metadata = {
-  title: "Affordable Insurance Products for Every Need",
-  description: "Looking for the best insurance in California? Circadian Insurance Brokers offers a range of tailored plans, from auto to home and beyond.",
+  title: "Motorcycle Insurance Brentwood CA - Best Motorbike Insurance",
+  description: "Top-rated motorbike insurance in Brentwood CA with customizable plans. Explore our flexible coverage options and get a fast, free quote online.",
+
   //===== OG Tags =====
   openGraph: {
-    title: "Affordable Insurance Products for Every Need",
-    description: "Looking for the best insurance in California? Circadian Insurance Brokers offers a range of tailored plans, from auto to home and beyond.",
-    url: "/product",
+    title: "Motorcycle Insurance Brentwood CA - Best Motorbike Insurance",
+    description: "Top-rated motorbike insurance in Brentwood CA with customizable plans. Explore our flexible coverage options and get a fast, free quote online.",
+    url: "/motorcycle-insurance",
     siteName: " Circadian Insurance Brokers",
     locale: "en_US",
     type: "website",
     images: "#",
   },
   //===== Canonical =====
-  alternates: { canonical: "/product" },
+  alternates: { canonical: "/motorcycle-insurance" },
 
 };
 

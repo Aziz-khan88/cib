@@ -1,18 +1,18 @@
 export const metadata = {
-  title: "Affordable Insurance Products for Every Need",
-  description: "Looking for the best insurance in California? Circadian Insurance Brokers offers a range of tailored plans, from auto to home and beyond.",
+  title: "Get Best Umbrella Insurance Brentwood CA - Instant Quotes",
+  description: "Get accurate and affordable Umbrella Insurance quotes in Brentwood CA. Get expert guidance and tailored Umbrella Insurance quotes in Brentwood CA",
   //===== OG Tags =====
   openGraph: {
-    title: "Affordable Insurance Products for Every Need",
-    description: "Looking for the best insurance in California? Circadian Insurance Brokers offers a range of tailored plans, from auto to home and beyond.",
-    url: "/product",
+    title: "Get Best Umbrella Insurance Brentwood CA - Instant Quotes",
+    description: "Get accurate and affordable Umbrella Insurance quotes in Brentwood CA. Get expert guidance and tailored Umbrella Insurance quotes in Brentwood CA",
+    url: "/umbrella-insurance",
     siteName: " Circadian Insurance Brokers",
     locale: "en_US",
     type: "website",
     images: "#",
   },
   //===== Canonical =====
-  alternates: { canonical: "/product" },
+  alternates: { canonical: "/umbrella-insurance" },
 
 };
 

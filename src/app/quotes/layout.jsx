@@ -1,5 +1,5 @@
 export const metadata = {
-  title: " Personalized Insurance Quotes for You",
+  title: "Personalized Insurance Quotes for You",
   description: "Ready for an insurance quote? Circadian Insurance Brokers offers personalized insurance quotes to ensure you get the best coverage at the best price.",
   //===== OG Tags =====
   openGraph: {

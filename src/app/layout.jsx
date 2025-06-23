@@ -14,13 +14,14 @@ const poppins = Poppins({
 });
 
 export const metadata = {
-  title: "",
-  description: "",
+  title: "Insurance Broker in California",
+  description:
+    "Expert Insurance Brokers in California serving Brentwood & Bay Area. We shop multiple carriers to find you the best rates on auto, home & business insurance.",
   //===== OG Tags =====
   openGraph: {
-    title: "",
+    title: "Insurance Broker in California",
     description:
-      "",
+      "Expert Insurance Brokers in California serving Brentwood & Bay Area. We shop multiple carriers to find you the best rates on auto, home & business insurance.",
     url: "/",
     siteName: " Circadian Insurance Brokers",
     locale: "en_US",

@@ -1,18 +1,18 @@
 export const metadata = {
-  title: "Affordable Insurance Products for Every Need",
-  description: "Looking for the best insurance in California? Circadian Insurance Brokers offers a range of tailored plans, from auto to home and beyond.",
+  title: "Best Life Insurance Brentwood CA - Get a Free Quote Today!",
+  description: "Top-rated Life Insurance Brentwood CA provider. Protect what matters most with coverage tailored to your needs. Contact us today.",
   //===== OG Tags =====
   openGraph: {
-    title: "Affordable Insurance Products for Every Need",
-    description: "Looking for the best insurance in California? Circadian Insurance Brokers offers a range of tailored plans, from auto to home and beyond.",
-    url: "/product",
+    title: "Best Life Insurance Brentwood CA - Get a Free Quote Today!",
+    description: "Top-rated Life Insurance Brentwood CA provider. Protect what matters most with coverage tailored to your needs. Contact us today.",
+    url: "/life-insurance",
     siteName: " Circadian Insurance Brokers",
     locale: "en_US",
     type: "website",
     images: "#",
   },
   //===== Canonical =====
-  alternates: { canonical: "/product" },
+  alternates: { canonical: "/life-insurance" },
 
 };
 

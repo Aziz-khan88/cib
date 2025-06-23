@@ -1,18 +1,19 @@
 export const metadata = {
-  title: "Affordable Insurance Products for Every Need",
-  description: "Looking for the best insurance in California? Circadian Insurance Brokers offers a range of tailored plans, from auto to home and beyond.",
+  title: "Protect Your Property with Earthquake Insurance in Brentwood, CA",
+  description: "Get the best earthquake insurance in Brentwood, CA. Top-Rated earthquake insurance with affordable and comprehensive coverage options. Contact us now.",
+
   //===== OG Tags =====
   openGraph: {
-    title: "Affordable Insurance Products for Every Need",
-    description: "Looking for the best insurance in California? Circadian Insurance Brokers offers a range of tailored plans, from auto to home and beyond.",
-    url: "/product",
+    title: "Protect Your Property with Earthquake Insurance in Brentwood, CA",
+    description: "Get the best earthquake insurance in Brentwood, CA. Top-Rated earthquake insurance with affordable and comprehensive coverage options. Contact us now.",
+    url: "/earthquake-insurance",
     siteName: " Circadian Insurance Brokers",
     locale: "en_US",
     type: "website",
     images: "#",
   },
   //===== Canonical =====
-  alternates: { canonical: "/product" },
+  alternates: { canonical: "/earthquake-insurance" },
 
 };
 

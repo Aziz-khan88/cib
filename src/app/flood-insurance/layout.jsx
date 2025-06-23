@@ -1,18 +1,18 @@
 export const metadata = {
-  title: "Affordable Insurance Products for Every Need",
-  description: "Looking for the best insurance in California? Circadian Insurance Brokers offers a range of tailored plans, from auto to home and beyond.",
+  title: "Brentwood CA Flood Insurance - Top Flood Insurance in Brentwood",
+  description: "Need flood insurance in Brentwood, CA? We offers tailored coverage to protect your property from flood risks. Don't wait until it's too late.",
   //===== OG Tags =====
   openGraph: {
-    title: "Affordable Insurance Products for Every Need",
-    description: "Looking for the best insurance in California? Circadian Insurance Brokers offers a range of tailored plans, from auto to home and beyond.",
-    url: "/product",
+    title: "Brentwood CA Flood Insurance - Top Flood Insurance in Brentwood",
+    description: "Need flood insurance in Brentwood, CA? We offers tailored coverage to protect your property from flood risks. Don't wait until it's too late.",
+    url: "/flood-insurance",
     siteName: " Circadian Insurance Brokers",
     locale: "en_US",
     type: "website",
     images: "#",
   },
   //===== Canonical =====
-  alternates: { canonical: "/product" },
+  alternates: { canonical: "/flood-insurance" },
 
 };
 

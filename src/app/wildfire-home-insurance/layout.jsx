@@ -1,18 +1,18 @@
 export const metadata = {
-  title: "Affordable Insurance Products for Every Need",
-  description: "Looking for the best insurance in California? Circadian Insurance Brokers offers a range of tailored plans, from auto to home and beyond.",
+  title: "WILDFIRE HOME INSURANCE - Circadian Insurance Brokers Wildfire Home Insurance",
+  description: "Get a quote for wildfire home insurance in minutes with Circadian Brokers. We offer competitive rates and great service.",
   //===== OG Tags =====
   openGraph: {
-    title: "Affordable Insurance Products for Every Need",
-    description: "Looking for the best insurance in California? Circadian Insurance Brokers offers a range of tailored plans, from auto to home and beyond.",
-    url: "/product",
+    title: "WILDFIRE HOME INSURANCE - Circadian Insurance Brokers Wildfire Home Insurance",
+    description: "Get a quote for wildfire home insurance in minutes with Circadian Brokers. We offer competitive rates and great service.",
+    url: "/wildfire-home-insurance",
     siteName: " Circadian Insurance Brokers",
     locale: "en_US",
     type: "website",
     images: "#",
   },
   //===== Canonical =====
-  alternates: { canonical: "/product" },
+  alternates: { canonical: "/wildfire-home-insurance" },
 
 };
 

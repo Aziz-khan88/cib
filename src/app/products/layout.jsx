@@ -5,14 +5,14 @@ export const metadata = {
   openGraph: {
     title: "Affordable Insurance Products for Every Need",
     description: "Looking for the best insurance in California? Circadian Insurance Brokers offers a range of tailored plans, from auto to home and beyond.",
-    url: "/product",
+    url: "/products",
     siteName: " Circadian Insurance Brokers",
     locale: "en_US",
     type: "website",
     images: "#",
   },
   //===== Canonical =====
-  alternates: { canonical: "/product" },
+  alternates: { canonical: "/products" },
 
 };
 

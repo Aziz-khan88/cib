@@ -1,18 +1,18 @@
 export const metadata = {
-  title: "Affordable Insurance Products for Every Need",
-  description: "Looking for the best insurance in California? Circadian Insurance Brokers offers a range of tailored plans, from auto to home and beyond.",
+  title: "Condo Insurance in Brentwood, CA - Get Your Quote Today",
+  description: "Get peace of mind with top-rated condo insurance in Brentwood, CA. Explore our affordable and reliable options designed to meet your needs.",
   //===== OG Tags =====
   openGraph: {
-    title: "Affordable Insurance Products for Every Need",
-    description: "Looking for the best insurance in California? Circadian Insurance Brokers offers a range of tailored plans, from auto to home and beyond.",
-    url: "/product",
+    title: "Condo Insurance in Brentwood, CA - Get Your Quote Today",
+    description: "Get peace of mind with top-rated condo insurance in Brentwood, CA. Explore our affordable and reliable options designed to meet your needs.",
+    url: "/condo-insurance",
     siteName: " Circadian Insurance Brokers",
     locale: "en_US",
     type: "website",
     images: "#",
   },
   //===== Canonical =====
-  alternates: { canonical: "/product" },
+  alternates: { canonical: "/condo-insurance" },
 
 };
 

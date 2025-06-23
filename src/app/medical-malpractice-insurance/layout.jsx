@@ -1,18 +1,18 @@
 export const metadata = {
-  title: "Affordable Insurance Products for Every Need",
-  description: "Looking for the best insurance in California? Circadian Insurance Brokers offers a range of tailored plans, from auto to home and beyond.",
+  title: "Medical Malpractice Insurance Brentwood, CA - Nursing Insurance",
+  description: "Get full protection with nursing insurance in Brentwood, CA. Our plans offer comprehensive coverage to safeguard your career and provide peace of mind.",
   //===== OG Tags =====
   openGraph: {
-    title: "Affordable Insurance Products for Every Need",
-    description: "Looking for the best insurance in California? Circadian Insurance Brokers offers a range of tailored plans, from auto to home and beyond.",
-    url: "/product",
+    title: "Medical Malpractice Insurance Brentwood, CA - Nursing Insurance",
+    description: "Get full protection with nursing insurance in Brentwood, CA. Our plans offer comprehensive coverage to safeguard your career and provide peace of mind.",
+    url: "/medical-malpractice-insurance",
     siteName: " Circadian Insurance Brokers",
     locale: "en_US",
     type: "website",
     images: "#",
   },
   //===== Canonical =====
-  alternates: { canonical: "/product" },
+  alternates: { canonical: "/medical-malpractice-insurance" },
 
 };
 
