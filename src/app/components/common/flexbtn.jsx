@@ -16,7 +16,7 @@ const FlexBtn = ({ FromLink, txt }) => {
 
             </div>
             <div className={styles.btnCommon}>
-                <a href="tel:9259180555">Call Now</a>
+                <a href="tel:925-417-8500">Call Now</a>
             </div>
         </div>
     )

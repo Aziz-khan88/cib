@@ -29,7 +29,11 @@ export const metadata = {
   },
   //===== Canonical =====
   alternates: { canonical: "/" },
-
+  //===== No-Index =====
+  robots: {
+    index: false,
+    follow: false,
+  },
 };
 
 export default function RootLayout({ children }) {
