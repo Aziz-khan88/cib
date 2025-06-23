@@ -14,6 +14,7 @@ const poppins = Poppins({
 });
 
 export const metadata = {
+  metadataBase: new URL("https://cib-woad.vercel.app"),
   title: "Insurance Broker in California",
   description:
     "Expert Insurance Brokers in California serving Brentwood & Bay Area. We shop multiple carriers to find you the best rates on auto, home & business insurance.",
