@@ -60,7 +60,7 @@ const Header = () => {
                             <li><Link href="/quotes" onClick={handleClick}>Quotes</Link></li>
                             <li><Link href="/about-us" onClick={handleClick}>About</Link></li>
                             <li><Link href="/contact-us" onClick={handleClick}>Contact Us</Link></li>
-                            <li><Link href="/contact-us" onClick={handleClick}>Request a Quote</Link></li>
+                            <li><Link href="/quotes" onClick={handleClick}>Request a Quote</Link></li>
                         </ul>
                     </Col>
                 </Row>
