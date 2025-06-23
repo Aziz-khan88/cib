@@ -9,7 +9,7 @@ const FlexBtn = ({ FromLink, txt }) => {
                     <Link href="/home-insurance-from">
                         {txt ? txt : "Request a Quote"}
                     </Link>
-                    : <Link href="/contact-us">
+                    : <Link href="/quotes">
                         {txt ? txt : "Request a Quote"}
                     </Link>
                 }
