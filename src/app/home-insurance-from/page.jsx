@@ -239,7 +239,7 @@ const Page = () => {
                     </div>
                   ) : currentStep === phoneIndex ? (
                     <input
-                      type="tel"
+                      type="number"
                       placeholder="Enter phone number"
                       value={answers[currentStep]}
                       onChange={handleChange}
