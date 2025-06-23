@@ -30,6 +30,72 @@
         border: 2px solid #f0eeee;
         border-radius: 15px;
       }
+      select {
+        width: 300px;
+        height: 45px;
+        border: 0px;
+        outline: none;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 16px;
+        color: #000;
+        background: #ededed;
+        padding: 0px 15px;
+        border: 2px solid #f0eeee;
+        border-radius: 15px;
+      }
+      input {
+        width: 300px;
+        height: 45px;
+        border: 0px;
+        outline: none;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 16px;
+        color: #000;
+        background: #ededed;
+        padding: 0px 15px;
+        border: 2px solid #f0eeee;
+        border-radius: 15px;
+        &[type="number"] {
+          -moz-appearance: textfield; // Firefox
+        }
+
+        &[type="number"]::-webkit-inner-spin-button,
+        &[type="number"]::-webkit-outer-spin-button {
+          -webkit-appearance: none; // Chrome, Safari
+          margin: 0;
+        }
+      }
+      label {
+        font-size: 20px;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        cursor: pointer;
+        margin-bottom: 5px;
+        input[type="checkbox"] {
+          width: 20px;
+          height: 20px;
+          margin-right: 20px;
+        }
+        &:last-child {
+          margin-bottom: 10px;
+        }
+        input[type="radio"] {
+          width: 20px;
+          height: 20px;
+          margin-right: 20px;
+        }
+      }
+      .selectCustom {
+        input {
+          display: block;
+          margin-top: 10px;
+        }
+      }
     }
     .questionBtn {
       display: flex;
