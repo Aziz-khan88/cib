@@ -108,23 +108,53 @@ export const ProductListingData = {
 
 export const TestimonialData = [
     {
-        title: "Mark R.",
-        txt: "I was in need of new motorcycle insurance, and Circadian Insurance Brokers made the whole process so easy. From the initial quote to the finalization of the policy, their team was quick, friendly, and professional. I’m now covered and feeling confident on the road!",
+        title: "Sudhakar SS",
+        txt: "Great Service! Thank you Rudy for the very quick response and action! Highly Recommend.",
         star: "5",
     },
     {
-        title: "Emily Larson",
-        txt: "I needed renter’s insurance quickly, and Circadian Insurance Brokers exceeded my expectations. They found me an affordable policy that covered everything I needed. Their knowledgeable and friendly team cares about getting you the right coverage.",
+        title: "Dave Kro ",
+        txt: "I have been with Rudy at Circadian Insurance for many years with my companies business liability and business auto policies. He is always informative, prompt and professional. In fact, my business liability policy was just up for renewal and Rudy found some new carriers offering twice the coverage amount for less than half my prior annual premium!",
         star: "5",
     },
     {
-        title: "Jason P.",
-        txt: "As a small business owner, insurance has always been on my mind. Circadian Insurance Brokers helped me navigate the options and secure the perfect policy tailored to my needs. Their team made the process stress-free, and I know I’m in great hands. I’ll be a customer for life!",
+        title: "Steve Kelleher",
+        txt: "Rudy was great helping me to find Car Insurance. Thanks",
         star: "5",
     },
     {
-        title: "Sarah Thompson",
-        txt: "I dreaded finding new home and auto insurance, but Circadian Insurance Brokers made it a breeze. They took the time to understand my needs and quickly found me the best options. I highly recommend them to anyone in California looking for reliable and efficient service!",
+        title: "Natalie Barrios",
+        txt: "Thank you Rudy for the fast and helpful service ! I called everywhere for home insurance & he was able to find it for me !",
+        star: "5",
+    },
+    {
+        title: "Tom Mitchell ",
+        txt: "My HO policy was canceled and I had 3 days to renew. Most agencies were not able to find a policy for my situation. Rudy found me a policy in one day. He was available to answer questions and provide additional choices throughout the process. Highly recommend.",
+        star: "5",
+    },
+    {
+        title: "Kamakana Alvaro",
+        txt: "Rudy was a huge help for us. Very professional and very responsive! I definitely recommend Circadian Insurance Brokers.",
+        star: "5",
+    },
+    {
+        title: "John Heathcliff",
+        txt: "It is pleasure working with Rudy who is a true insurance professional.",
+        star: "5",
+    },
+    {
+        title: 'Songkai "Kai" Hu',
+        txt: "Rudy is truly amazing. He was not only the first person to get back to me, but also the nicest agent I talked to. Even after some changes in California, his company was no longer able to insure me, he provided great suggestions for other options.",
+        star: "5",
+    },
+    {
+        title: "Eun-Joo Chung",
+        txt: "What a consummate professional Rudy at Circadian was. He swiftly took down my information, shopped around different insurance carriers and even when the first carrier denied my coverage, he quickly found another company who actually offered me a better rate! He was also able to wrap everything up within just few hours, which is pretty much unheard of.",
+        star: "5",
+    },
+    {
+        title: "bruce murray",
+        txt: "Great service!",
         star: "5",
     },
 ]

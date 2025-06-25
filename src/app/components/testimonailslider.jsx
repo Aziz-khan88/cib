@@ -2,9 +2,15 @@
 import styles from "@/styles/components/testimonialslider.module.scss"
 import useEmblaCarousel from 'embla-carousel-react'
 import { GoogleIcon, StarIcon } from "../app-constants"
+import { useRef } from "react";
+import Autoplay from "embla-carousel-autoplay";
+
 
 export function TestimonialCarousel({ data }) {
-    const [emblaRef] = useEmblaCarousel()
+    const autoplay = useRef(
+        Autoplay({ delay: 13000 }) // delay in ms
+    );
+    const [emblaRef] = useEmblaCarousel({ loop: true }, [autoplay.current])
 
     return (
         <div className={styles.embla} ref={emblaRef}>

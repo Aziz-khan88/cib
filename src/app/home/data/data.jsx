@@ -15,9 +15,6 @@ export const ProductListingData = {
     title: (<>Comprehensive <span>insurance services</span></>),
     txt: "Request your free policy review today",
     productlisting: [
-
-
-
         {
             icon: <HomeIcon />,
             title: "Homeowner Insurance",

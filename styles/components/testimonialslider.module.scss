@@ -3,10 +3,12 @@
   .embla__container {
     display: flex;
     justify-content: space-between;
-    gap: 20px;
+    gap: 0px;
+
     .embla__slide {
-      flex: 0 0 25%;
+      flex: 0 0 calc(25% - 0px);
       min-width: 0;
+      margin-left: 20px;
       .testimonialItem {
         width: 100%;
         height: 350px;
@@ -60,7 +62,7 @@
         }
         .bottomLayout {
           display: flex;
-          align-items: center;
+          align-items: flex-start;
           height: 180px;
           p {
             font-style: normal;
@@ -79,9 +81,8 @@
 @media only screen and (min-width: 1400px) and (max-width: 1600px) {
   .embla {
     .embla__container {
-      gap: 15px;
       .embla__slide {
-        flex: 0 0 25%;
+        flex: 0 0 28%;
         .testimonialItem {
           height: 350px;
           border-radius: 25px 25px 25px 0px;
@@ -95,7 +96,7 @@
               line-height: 28px;
             }
             .title {
-              flex: 0 0 calc(100% - 130px);
+              flex: 0 0 calc(100% - 120px);
               font-size: 18px;
               line-height: 22px;
               .star {
@@ -111,7 +112,8 @@
             }
           }
           .bottomLayout {
-            height: 180px;
+            height: 220px;
+            overflow: auto;
             p {
               font-size: 15px;
               line-height: 22px;
@@ -125,9 +127,8 @@
 @media only screen and (min-width: 1300px) and (max-width: 1399px) {
   .embla {
     .embla__container {
-      gap: 15px;
       .embla__slide {
-        flex: 0 0 25%;
+        flex: 0 0 28%;
         .testimonialItem {
           height: 320px;
           border-radius: 25px 25px 25px 0px;
@@ -172,9 +173,9 @@
 @media only screen and (min-width: 1100px) and (max-width: 1299px) {
   .embla {
     .embla__container {
-      gap: 10px;
       .embla__slide {
-        flex: 0 0 25%;
+        flex: 0 0 30%;
+        margin-left: 15px;
         .testimonialItem {
           height: 320px;
           border-radius: 25px 25px 25px 0px;
@@ -219,13 +220,13 @@
 @media only screen and (min-width: 900px) and (max-width: 1099px) {
   .embla {
     .embla__container {
-      gap: 10px;
       .embla__slide {
-        flex: 0 0 30%;
+        flex: 0 0 33.33%;
         .testimonialItem {
           height: 320px;
           border-radius: 25px 25px 25px 0px;
           padding: 20px;
+          margin-left: 10px;
           .topLayout {
             margin-bottom: 30px;
             .Img {
@@ -266,13 +267,13 @@
 @media only screen and (min-width: 768px) and (max-width: 899px) {
   .embla {
     .embla__container {
-      gap: 10px;
       .embla__slide {
-        flex: 0 0 40%;
+        flex: 0 0 45%;
         .testimonialItem {
           height: 320px;
           border-radius: 25px 25px 25px 0px;
           padding: 20px;
+          margin-left: 10px;
           .topLayout {
             margin-bottom: 30px;
             .Img {
@@ -313,13 +314,13 @@
 @media only screen and (min-width: 576px) and (max-width: 767px) {
   .embla {
     .embla__container {
-      gap: 10px;
       .embla__slide {
-        flex: 0 0 48%;
+        flex: 0 0 60%;
         .testimonialItem {
           height: 300px;
           border-radius: 25px 25px 25px 0px;
           padding: 20px;
+          margin-left: 10px;
           .topLayout {
             margin-bottom: 30px;
             .Img {
@@ -360,13 +361,13 @@
 @media only screen and (min-width: 0px) and (max-width: 575px) {
   .embla {
     .embla__container {
-      gap: 10px;
       .embla__slide {
         flex: 0 0 90%;
         .testimonialItem {
-          height: 280px;
+          height: 300px;
           border-radius: 25px 25px 25px 0px;
           padding: 20px;
+          margin-left: 0px;
           .topLayout {
             margin-bottom: 30px;
             .Img {
