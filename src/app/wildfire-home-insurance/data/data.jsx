@@ -46,25 +46,7 @@ export const SimpleData = {
 import BannerImg1 from "media/product/wildfire/blueContent.webp"
 export const BlueContentData = {
     title: (<>
-        Your Safety Net for <span>Life’s Unexpected Turns</span>
-    </>),
-    txt: (<>
-        <p>Umbrella insurance in Brentwood CA, offers an essential layer of protection, giving you peace of mind when the unexpected happens.</p>
-        <ul>
-            <li>Shield your assets from costly lawsuits and legal fees.</li>
-            <li>Protect yourself from risks not covered by basic insurance.</li>
-            <li>Customize your coverage to meet your unique needs.</li>
-            <li>Easily compare quotes to find affordable, comprehensive protection.</li>
-        </ul>
-        <p>In life, things don’t always go as planned. That’s where umbrella insurance steps in. It goes beyond the basics of home or auto coverage, offering an extra layer of protection for those “what if” moments. By reviewing umbrella insurance quotes, you can ensure you're prepared for whatever comes your way without risking your hard-earned assets.</p>
-        <p>In a place like Brentwood, where homes and assets are valuable, umbrella insurance is a must. It provides a safety net that catches the gaps left by your regular policies. By comparing umbrella insurance quotes in Brentwood, CA, you can find the perfect plan that suits your needs and your budget. This added layer of protection enables you to enjoy life with confidence, knowing that regardless of what happens, your assets are secure and your future is protected.</p>
-    </>),
-    img: BannerImg1.src
-}
-
-export const SimpleData1 = {
-    title: (<>
-        Smart Wildfire Coverage Built Around You
+        Smart Wildfire <span>Coverage Built</span> Around You
     </>),
     txt: (<>
         <p>We make protecting your Brentwood home simple and stress-free.</p>
@@ -75,11 +57,9 @@ export const SimpleData1 = {
             <li>Friendly experts who actually listen to you</li>
         </ul>
         <p>You don’t need a one-size-fits-all insurance plan; you need coverage that fits your home like a glove. That’s exactly what we offer. Our wildfire insurance in Brentwood, CA, is built with homeowners in mind, giving you flexible protection that covers everything from structural damage to smoke cleanup and temporary housing. It’s real peace of mind, not just paperwork.</p>
-        <p>Our team is here to walk you through every step, from understanding your options to picking a plan that feels right. We believe getting covered shouldn’t be complicated, and we’re here to make it smooth, fast, and personal.</p>
-        <p>If you're serious about protecting your home, we’re ready to help. Get in touch now for custom wildfire home insurance in Brentwood, CA that’s built specifically for your needs. Let’s secure your home before it's too late.</p>
-
+        <p>Our team is here to walk you through every step, from understanding your options to picking a plan that feels right. We believe getting covered shouldn’t be complicated, and we’re here to make it smooth, fast, and personal. When wildfires threaten, you’ll know you’ve</p>
     </>),
-
+    img: BannerImg1.src
 }
 
 export const TestimonialData = [

@@ -5,12 +5,37 @@ import Link from "next/link";
 import { Col, Container, Row } from "react-bootstrap";
 import MainLogo from "media/layout/mainLogo.webp";
 import Image from "next/image";
-import { ClosedIcon, NavIcon } from "../app-constants";
-
+import { ClosedIcon, NavIcon } from "@/src/app/app-constants";
+import { usePathname } from "next/navigation";
 const Header = () => {
     const [scrolled, setScrolled] = useState(false);
     const [isActive, setIsActive] = useState(false);
+    const pathname = usePathname();
+    const customQuotePaths = [
+        // "/homeowner-insurance",
+        // "/wildfire-home-insurance",
+        // "/condo-insurance",
+        "/home-insurance-quote-antioch-ca",
+        "/home-insurance-quote-byron-ca",
+        "/home-insurance-quote-clayton-ca",
+        "/home-insurance-quote-discovery-bay-ca",
+        "/home-insurance-quote-livermore-ca",
+        "/home-insurance-quote-oakley-ca",
+        "/home-insurance-quote-pittsburg-ca",
+        "/home-insurance-quote-pleasanton-ca",
+        "/wildfire-home-insurance-quote-antioch-ca",
+        "/wildfire-home-insurance-quote-byron-ca",
+        "/wildfire-home-insurance-quote-clayton-ca",
+        "/wildfire-home-insurance-quote-discovery-bay-ca",
+        "/wildfire-home-insurance-quote-livermore-ca",
+        "/wildfire-home-insurance-quote-oakley-ca",
+        "/wildfire-home-insurance-quote-pleasanton-ca",
+    ];
 
+
+    const quoteLink = customQuotePaths.includes(pathname)
+        ? "/home-insurance-from"
+        : "/quotes";
     useEffect(() => {
         const handleScroll = () => {
             setScrolled(window.scrollY > 10);
@@ -59,8 +84,9 @@ const Header = () => {
                             <li><Link href="/products" onClick={handleClick}>Products</Link></li>
                             <li><Link href="/quotes" onClick={handleClick}>Quotes</Link></li>
                             <li><Link href="/about-us" onClick={handleClick}>About</Link></li>
+                            <li><Link href="/blogs" onClick={handleClick}>Blogs</Link></li>
                             <li><Link href="/contact-us" onClick={handleClick}>Contact Us</Link></li>
-                            <li><Link href="/quotes" onClick={handleClick}>Request a Quote</Link></li>
+                            <li><Link href={quoteLink} onClick={handleClick}>Request a Quote</Link></li>
                         </ul>
                     </Col>
                 </Row>

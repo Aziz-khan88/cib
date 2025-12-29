@@ -1,0 +1,105 @@
+.scheduleWappert {
+    padding: 30px;
+
+    .serviceWapper {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+
+        h3 {
+            font-size: 25px;
+        }
+
+        .serviceItem {
+            flex: 0 0 calc(100%/3 - 10px);
+            border: 2px solid #263358;
+            height: 60px;
+            border-radius: 5px;
+            font-size: 16px;
+            line-height: 22px;
+            color: #263358;
+            font-weight: 500;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+
+            &:hover {
+                background: #ca0101;
+                color: #fff;
+                border: 2px solid #ca0101;
+            }
+        }
+    }
+
+    .calendarBox {
+        button {
+            display: block;
+            width: 50%;
+            height: 50px;
+            background: #263358;
+            border-radius: 5px;
+            color: #fff;
+            border: 0px;
+            flex: 0 0 calc(50% - 10px);
+        }
+    }
+
+    .calendarWapper {
+
+        .calendarForm {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            justify-content: center;
+
+            input {
+                flex: 0 0 calc(50% - 10px);
+                height: 50px;
+                color: #263358;
+                border-radius: 5px;
+                margin-bottom: 10px;
+                padding-left: 10px;
+                border: 1px solid #263358;
+                outline: none;
+            }
+
+            select {
+                flex: 0 0 calc(50% - 10px);
+                height: 50px;
+                color: #263358;
+                border-radius: 5px;
+                margin-bottom: 10px;
+                border: 1px solid #263358;
+                outline: none;
+                padding-left: 10px;
+            }
+
+            textarea {
+                width: 100%;
+                height: 100px;
+                color: #263358;
+                border-radius: 5px;
+                margin-bottom: 10px;
+                border: 1px solid #263358;
+                padding: 10px 0px 0px 10px;
+                outline: none;
+            }
+
+            p {
+                width: 100%;
+                text-align: left;
+            }
+
+            button {
+                width: 100%;
+                height: 50px;
+                background: #263358;
+                border-radius: 5px;
+                color: #fff;
+                border: 0px;
+                flex: 0 0 calc(50% - 10px);
+            }
+        }
+    }
+}

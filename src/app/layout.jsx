@@ -5,6 +5,7 @@ import Footer from "@/src/app/layout/footer";
 import Header from "@/src/app/layout/header";
 import TopBar from "@/src/app/layout/topbar";
 import { Toaster } from "react-hot-toast";
+import GTM from "@/src/app/GTM";
 
 
 const poppins = Poppins({
@@ -14,27 +15,30 @@ const poppins = Poppins({
 });
 
 export const metadata = {
-  metadataBase: new URL("https://cib-woad.vercel.app"),
-  title: "Insurance Broker in California",
+  metadataBase: new URL("https://www.circadianbrokers.com/"),
+  title: "Circadian Brokers, Insurance Broker in California.",
   description:
     "Expert Insurance Brokers in California serving Brentwood & Bay Area. We shop multiple carriers to find you the best rates on auto, home & business insurance.",
   //===== OG Tags =====
   openGraph: {
-    title: "Insurance Broker in California",
+    title: "Circadian Brokers, Insurance Broker in California.",
     description:
       "Expert Insurance Brokers in California serving Brentwood & Bay Area. We shop multiple carriers to find you the best rates on auto, home & business insurance.",
     url: "/",
     siteName: " Circadian Insurance Brokers",
     locale: "en_US",
     type: "website",
-    images: "#",
+    images: "https://www.circadianbrokers.com/logo.webp",
   },
   //===== Canonical =====
   alternates: { canonical: "/" },
+  other: {
+    "google-site-verification": "P6qQozJzN0Mp-C5fGqj_koLTIb6sv43Shuc1upxK-wE",
+  },
   //===== No-Index =====
   robots: {
-    index: false,
-    follow: false,
+    index: true,
+    follow: true,
   },
 };
 
@@ -45,6 +49,18 @@ export default function RootLayout({ children }) {
         <Toaster position="bottom-right" reverseOrder={false} />
         <TopBar />
         <Header />
+        {/* Google Tag Manager (noscript) */}
+        <noscript>
+          <iframe
+            src="https://www.googletagmanager.com/ns.html?id=GTM-K2PDTJCJ"
+            height="0"
+            width="0"
+            style={{ display: "none", visibility: "hidden" }}
+          ></iframe>
+        </noscript>
+
+        {/* GTM/GA Scripts */}
+        <GTM />
         {children}
         <Footer />
       </body>
