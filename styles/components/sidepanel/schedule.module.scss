@@ -1,78 +1,319 @@
 .scheduleWappert {
     padding: 30px;
 
-    .serviceWapper {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 10px;
+    .serviceTitle {
+        font-size: 20px;
+        font-weight: 600;
+        margin-bottom: 10px;
+        line-height: 25px;
 
-        h3 {
-            font-size: 25px;
-        }
+    }
 
-        .serviceItem {
-            flex: 0 0 calc(100%/3 - 10px);
-            border: 2px solid #263358;
-            height: 60px;
-            border-radius: 5px;
-            font-size: 16px;
-            line-height: 22px;
-            color: #263358;
-            font-weight: 500;
+    .serviceCategory {
+        .serviceWapper {
             display: flex;
-            justify-content: center;
-            align-items: center;
-            cursor: pointer;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-bottom: 20px;
 
-            &:hover {
-                background: #ca0101;
-                color: #fff;
-                border: 2px solid #ca0101;
+            h3 {
+                font-size: 25px;
+            }
+
+            .serviceItem {
+                flex: 0 0 calc(100%/2 - 10px);
+                border: 1px solid #263358;
+                border-radius: 5px;
+                font-size: 16px;
+                line-height: 22px;
+                color: #263358;
+                font-weight: 500;
+                cursor: pointer;
+                overflow: hidden;
+
+                .serviceContent {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+
+                    .serviceTit {
+                        flex: 0 0 100%;
+
+                        h5 {
+                            font-size: 18px;
+                            margin-bottom: 5px;
+                            color: #000;
+                            font-weight: 600;
+
+                            &::after {
+                                content: '';
+                                width: 30px;
+                                height: 2px;
+                                background: #ca0101;
+                                display: block;
+                                margin-top: 5px;
+                            }
+                        }
+
+                        h6 {
+                            font-size: 15px;
+                            margin-bottom: 5px;
+                            color: #a9a9a9;
+                            font-weight: 500;
+                        }
+
+                        ul {
+                            display: flex;
+
+                            li {
+                                font-size: 13px;
+                                font-weight: 500;
+
+                                &::after {
+                                    content: "|";
+                                    margin-left: 3px;
+                                    margin-right: 3px;
+                                    color: #263358;
+                                }
+
+                                &:last-child {
+                                    &::after {
+                                        display: none;
+                                    }
+                                }
+
+                            }
+                        }
+                    }
+
+                    .serviceImg {
+                        flex: 0 0 150px;
+                        position: relative;
+                        // width: 120px;
+                        height: 100px;
+                        margin-right: 20px;
+
+                        img {
+                            object-fit: cover;
+                            border-radius: 5px;
+                        }
+                    }
+                }
+
+                &:hover {
+                    background: #263358;
+
+                    .serviceTit {
+
+                        h5 {
+                            color: #fff;
+                        }
+
+                        h6 {
+                            color: #fff;
+                        }
+
+                        ul {
+                            li {
+                                color: #fff;
+
+
+                                &::after {
+                                    color: #fff;
+                                }
+                            }
+                        }
+                    }
+                }
             }
         }
     }
 
-    .calendarBox {
-        button {
-            display: block;
-            width: 50%;
-            height: 50px;
-            background: #263358;
-            border-radius: 5px;
-            color: #fff;
-            border: 0px;
-            flex: 0 0 calc(50% - 10px);
+    .sideWapper {
+        display: flex;
+        justify-content: space-between;
+
+        .sideValue {
+            flex: 0 0 55%;
+
+            p {
+                font-size: 15px;
+                padding: 20px 0px 0px;
+                text-align: center;
+            }
+
+            .slotBox {
+                flex-wrap: wrap;
+                max-width: 100%;
+                margin: auto;
+                display: flex;
+                gap: 2px;
+                margin-bottom: 20px;
+
+                .serviceTitle {
+                    flex: 0 0 100%;
+                }
+
+                .slotItem {
+                    flex: 0 0 calc(100% / 3 - 2px);
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+
+
+
+                    &.selected {
+                        justify-content: space-between;
+
+                        button {
+                            color: #000;
+                            background: #f3f3f3;
+                            border: 1px solid #e6e6e6;
+
+
+                            &:last-child {
+                                background: #ff0004;
+                                border: 1px solid #ff0004;
+                                color: #fff;
+                            }
+                        }
+                    }
+
+                    button {
+                        width: 100%;
+                        height: 35px;
+                        color: #333;
+                        background: #f3f3f3;
+                        border: none;
+                        border: 1px solid #f3f3f3;
+                        border-radius: 5px;
+                        cursor: pointer;
+                        transition: background-color 0.3s;
+                        font-weight: 600;
+                        font-size: 12px;
+                        padding: 0px;
+
+                        &:hover {
+                            background: #ff0004;
+                            color: #fff;
+                        }
+                    }
+                }
+            }
+
+            .disabled {
+                opacity: 0.5;
+                pointer-events: none;
+            }
+
+            .slotButton:disabled {
+                cursor: not-allowed;
+                background-color: #ddd;
+            }
+
+            .summaryItem {
+                margin: 20px 0px;
+                display: flex;
+                align-items: center;
+
+                .summaryImg {
+                    position: relative;
+                    flex: 0 0 150px;
+                    height: 100px;
+                    margin-right: 15px;
+
+                    img {
+                        object-fit: cover;
+                        border-radius: 5px;
+                    }
+                }
+
+                h5 {
+                    font-size: 18px;
+                    margin-bottom: 5px;
+                }
+
+                ul {
+                    display: flex;
+
+                    li {
+                        font-size: 13px;
+                        font-weight: 500;
+
+                        &::after {
+                            content: "|";
+                            margin-left: 3px;
+                            margin-right: 3px;
+                            color: #263358;
+                        }
+
+                        &:last-child {
+                            &::after {
+                                display: none;
+                            }
+                        }
+
+                    }
+                }
+            }
+        }
+
+        .calendarBox {
+            flex: 0 0 40%;
+        }
+
+        .navigationButtons {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+            margin-top: 20px;
+
+            .nextButton,
+            .backButton {
+                display: block;
+                flex: 0 0 calc(100% / 2 - 5px);
+                height: 50px;
+                background: #263358;
+                border-radius: 5px;
+                color: #fff;
+                border: 0px;
+            }
         }
     }
+
+
 
     .calendarWapper {
 
         .calendarForm {
             display: flex;
             flex-wrap: wrap;
-            gap: 10px;
+            gap: 5px;
             justify-content: center;
 
             input {
-                flex: 0 0 calc(50% - 10px);
+                flex: 0 0 calc(50% - 5px);
                 height: 50px;
                 color: #263358;
                 border-radius: 5px;
-                margin-bottom: 10px;
+                margin-bottom: 5px;
                 padding-left: 10px;
                 border: 1px solid #263358;
                 outline: none;
+                font-size: 14px;
             }
 
             select {
-                flex: 0 0 calc(50% - 10px);
+                flex: 0 0 calc(50% - 5px);
                 height: 50px;
                 color: #263358;
                 border-radius: 5px;
-                margin-bottom: 10px;
+                margin-bottom: 5px;
                 border: 1px solid #263358;
                 outline: none;
                 padding-left: 10px;
+                font-size: 14px;
             }
 
             textarea {
@@ -80,15 +321,19 @@
                 height: 100px;
                 color: #263358;
                 border-radius: 5px;
-                margin-bottom: 10px;
+                margin-bottom: 5px;
                 border: 1px solid #263358;
                 padding: 10px 0px 0px 10px;
                 outline: none;
+                font-size: 14px;
             }
 
             p {
                 width: 100%;
                 text-align: left;
+                font-size: 14px;
+                margin-bottom: 5px;
+                line-height: 20px;
             }
 
             button {

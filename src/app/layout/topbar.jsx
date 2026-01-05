@@ -9,8 +9,12 @@ import SidePanelPopup from "@/src/app/components/sidepanel/sidepanelpopup";
 
 const TopBar = () => {
     const [show, setShow] = useState(false);
+    const [activePanel, setActivePanel] = useState("");
 
-    const handleShow = () => setShow(true);
+    const handleShow = (panel) => {
+        setActivePanel(panel);
+        setShow(true);
+    };
     const handleClose = () => setShow(false);
 
     return (
@@ -52,19 +56,19 @@ const TopBar = () => {
                         <span>Call for Emergency Services 219-779-9815</span>
                     </a>
                 </div>
-                <div className={styles.panelItem} onClick={handleShow} style={{ cursor: "pointer" }}>
+                <div className={styles.panelItem} onClick={() => handleShow("schedule")} >
                     <div>
                         <div className={styles.panelIcon}><CalendarIcon /></div>
                         <span>Schedule now</span>
                     </div>
                 </div>
-                <div className={styles.panelItem}>
+                <div className={styles.panelItem} onClick={() => handleShow("payment")}>
                     <div>
                         <div className={styles.panelIcon}><PaymentIcon /></div>
                         <span>Make a payment</span>
                     </div>
                 </div>
-                <div className={styles.panelItem}>
+                <div className={styles.panelItem} onClick={() => handleShow("contact")}>
                     <div>
                         <div className={styles.panelIcon}><EmailIcon /></div>
                         <span>We’d love to hear from you</span>
@@ -73,7 +77,7 @@ const TopBar = () => {
             </div>
 
             {/* Modal */}
-            <SidePanelPopup show={show} onHide={handleClose} />
+            <SidePanelPopup show={show} onHide={handleClose} activePanel={activePanel} />
         </section>
     );
 }

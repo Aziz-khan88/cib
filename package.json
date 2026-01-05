@@ -17,6 +17,7 @@
     "nodemailer": "^7.0.3",
     "react": "^19.0.0",
     "react-bootstrap": "^2.10.10",
+    "react-calendar": "^6.0.0",
     "react-dom": "^19.0.0",
     "react-hot-toast": "^2.5.2",
     "sass": "^1.89.2"

@@ -1,8 +1,10 @@
 import { Modal } from 'react-bootstrap';
 import Schedule from '@/src/app/components/sidepanel/schedule';
+import Payment from '@/src/app/components/sidepanel/payment';
+import Contcat from '@/src/app/components/sidepanel/contcat';
 
 
-const SidePanelPopup = ({ show, onHide }) => {
+const SidePanelPopup = ({ show, onHide, activePanel }) => {
     return (
         <Modal
             show={show}
@@ -11,7 +13,9 @@ const SidePanelPopup = ({ show, onHide }) => {
             centered
             className="SideBar"
         >
-            <Schedule />
+            {activePanel === "schedule" && <Schedule />}
+            {activePanel === "payment" && <Payment />}
+            {activePanel === "contact" && <Contcat />}
         </Modal>
     );
 };
